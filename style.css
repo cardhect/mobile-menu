@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #6944cd;
+    color: white;
+    padding-top: 12px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    padding-bottom: 12px;
+    border-bottom: 4px solid #6944cd;
+}
+a:hover{
+    border-bottom: 4px solid #5235a4;
+}
+
+.drop-down-container{
+    display: flex;
+}
