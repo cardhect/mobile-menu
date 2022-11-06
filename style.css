@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 nav{
     display: flex;
     flex-direction: row;
@@ -6,12 +9,24 @@ nav{
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     height: 65px;
+    padding: 3px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    border-bottom: 3px solid blue;
+}
 
 .drop-down-btn{
     background-color: lightblue;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    /* padding: 0; */
+border: none;
+background: none;
     color: black;
     height: 55px;
     border-radius: 10px;
@@ -22,26 +37,33 @@ nav{
 
 .dropdown-items{
     display: none;
+    flex-direction: column;
     align-self: end;
     margin: 0;
     list-style: none;
     background-color: lightblue;
     padding: 6px;
-    border-radius: 5px;
+    padding-right: 4px;
+    border-radius: 1px;
     position: absolute;
+    width: 44px;
+    font-size: 13px;
 }
 
 .drop-down-item{
     position: relative;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     background-color: lightblue;
     color: black;
     margin-bottom: 15px;
-    height: 25px;
-    width: 45px;
+    height: 26px;
+    /* width: 35%; */
     padding: 10px;
     text-align: center;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .drop-down-item:hover{

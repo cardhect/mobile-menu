@@ -1,8 +1,12 @@
+function dropDownDisplay(event) {
+	const dropDownContainer = event.target.nextElementSibling;
 
-function dropDownDisplay() {
-    console.log('test');
-    const dropDownContainer = document.querySelector(".dropdown-items");
+	const dropDownDisplayVal =
+		event.target.nextElementSibling.attributes[1].value;
 
-    dropDownContainer.style.display = 'flex';
-    
+	if (dropDownDisplayVal === "display: none;") {
+		dropDownContainer.style.display = "flex";
+	} else {
+		dropDownContainer.style.display = "none";
+	}
 }
